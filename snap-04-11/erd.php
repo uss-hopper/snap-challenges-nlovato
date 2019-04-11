@@ -17,6 +17,6 @@
 		<br>
 		<br>
 
-		<img src="erdsnapchallenge.jpg" width=" 380px" alt="erd">
+		<img src="erdsnapchallenge.jpg" width=" 450px" alt="erd">
 
 	</body>
