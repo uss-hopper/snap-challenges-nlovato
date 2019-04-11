@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="c758997b-c5ab-4150-aa0a-932df86f4c3e" name="snap_04_09" url="http://bootcamp-coders.cnm.edu">
-        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/nmarshlovato/public_html/snap_04_09" accessType="SFTP" authAgent="true">
+        <fileTransfer host="bootcamp-coders.cnm.edu" port="22" rootFolder="/home/nmarshlovato/public_html/snap-challenges-nlovato" accessType="SFTP" authAgent="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
