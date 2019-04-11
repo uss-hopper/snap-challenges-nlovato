@@ -17,6 +17,6 @@
 		<br>
 		<br>
 
-		img src="erdsnapchallenge.jpg" width=" 250px" alt="Harley Quinzel">
+		img src="erdsnapchallenge.jpg" width=" 250px" alt="erd">
 
 	</body>
