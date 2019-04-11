@@ -19,6 +19,8 @@
 		<br>
 		<br>
 
+		<h2><a href="erd.php">User Case/Interaction Flow</a></h2>
+
 
 
 	</body>
