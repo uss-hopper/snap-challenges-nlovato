@@ -7,16 +7,16 @@
 
 		<head>
 			<meta charset="UTF-8">
-			<title>Snap Challenge User Story</title>
+			<title>Snap Challenge Erd</title>
 		</head>
 
 	<body>
 
-		<h1>Snap Challenge User Story</h1>
+		<h1>Snap Challenge ERD</h1>
 
 		<br>
 		<br>
 
-		img src="erdsnapchallenge.png" width=" 250px" alt="Harley Quinzel">
+		img src="erdsnapchallenge.jpg" width=" 250px" alt="Harley Quinzel">
 
 	</body>
