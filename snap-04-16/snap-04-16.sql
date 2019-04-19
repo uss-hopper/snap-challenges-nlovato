@@ -1,12 +1,13 @@
-drop table if exists task;
+drop table if exists tasks;
 
-create table task(
+create table tasks(
 	taskId binary(20) not null,
 	taskTitle varchar(255) not null,
-	taskStartDate datetime null,
-	taskDueDate datetime null,
-	taskStatus varchar(64),
-	taskPriority varchar(64),
+	taskStartDate datetime,
+	taskDueDate datetime,
+	taskStatus varchar(64) not null,
+	taskPriority varchar(64) not null,
 	taskDescription varchar(256),
 	primary key(taskId)
 );
+
