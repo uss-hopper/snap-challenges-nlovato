@@ -24,3 +24,34 @@ public function getList() : ?string {
 	$list = new list("sdailfjweljoajjflishjriwenl");
 }
 
+/*
+ * class,  two state variables, accessors, mutators and a method
+ *
+ * class Foo {
+ * 	private $bar;
+ * 	private $baz;
+ * 	public function __construct( string $newBar, $newBaz)
+ * 	$this->setBar($newBaz);
+ * 	$this->setBaz($newBar;
+ * echo "I am Groot";
+ * 	}
+ * 	public function setBar(string $newBar) : void {
+ * 	$this->>bar = $newBar;
+ * }
+ * 	public function getBar() : string {
+ * 		return $this->bar;
+ * }
+ * 	public function getBaz() : int {
+ * 		return $this->baz;
+ * }
+ *
+ * 	public function concat() : string {
+ * 	return $this->bar . (string)$this->baz;
+ * 	}
+ * }
+ *
+ * instantiate class and call to a method
+ *
+ * $foo = new Foo("string", 12345);
+ * concat $foo->concat();
+ */
