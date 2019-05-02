@@ -8,19 +8,24 @@
  * @throws \PDOException when mySQL related errors occur
  * @throws \TypeError when variables are not the correct data type
  **/
-public static function getTweetByTweetDateTime(\PDO $pdo, $tweetDateTime) : \SplFixedArray {
+public static function getTweetByTweetDate(\PDO $pdo, DateTime, $tweetDate) : \SplFixedArray {
 
-	try {
-		$tweetDateTime = self::validateUuid($tweetDateTime);
-	} catch(\InvalidArgumentException | \RangeException | \Exception | \TypeError $exception) {
-		throw(new \PDOException($exception->getMessage(), 0, $exception));
-	}
+
+		$startDateString = $tweetDateTime->format(format: 'Y-m-d') . '00:00:00';
+		$startDate= new DateTime($startDateString);
+		$endDate = new DateTime($startDateString)
+		$endDate->add(new DateInterval('P1D'));
 
 	// create query template
-	$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDateTime = :tweetDateTime";
+	$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDateTime >= :startDate AND tweetDate < :endDate";
 	$statement = $pdo->prepare($query);
+
 	// bind the tweet profile id to the place holder in the template
-	$parameters = ["tweetProfileId" => $tweetDateTime->getBytes()];
+	$parameters [
+		'start' => $endDate->fprmat("Y-m-d H:i:s.u"),
+
+	]
+} => $tweetDateTime->getBytes()];
 	$statement->execute($parameters);
 	// build an array of tweets
 	$tweets = new \SplFixedArray($statement->rowCount());
