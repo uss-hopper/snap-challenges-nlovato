@@ -1,26 +1,11 @@
-body{
-	background-color: orange;
-}
-h1{
-	color: yellow;
-	animation: flash linear 1s infinite;
-}
 
-keyframes flash {
-0%; opacity: 1;
-
-50%; opacity: 0;
-
-100%; opacity: 1;
-}
-
-ul {
+.my-list {
 	padding: 5px;
 	margin: 10px;
-	list-style: square;
+	list-style: none;
 }
 
-li {
+.my-list {
 	background: tomato;
 
 	line-height: 150px;
@@ -28,4 +13,9 @@ li {
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
+
+	width: 200px;
+	height: 150px;
+	padding: 5px;
+	margin-top: 10px;
 }
