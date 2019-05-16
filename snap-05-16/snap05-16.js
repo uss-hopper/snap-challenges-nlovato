@@ -193,7 +193,13 @@ var people = [{
 var people = [1, 4, 9, 16];
 
 // pass a function to map
-const map1 = people.address(x => x * 2);
+const address = people.address(x => x * 2);
 
 console.log(address);
 // expected output: Array [2, 8, 18, 32]
+
+// callback array
+var new_people = people.address(function callback(currentValue[, address[, people]])
+{
+	// Return element for new_array
+}[, thisArg]);
