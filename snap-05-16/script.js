@@ -190,16 +190,15 @@ var people = [{
 	}
 }]
 
-var people = [1, 4, 9, 16];
 
-// pass a function to map
-const address = people.address(x => x * 2);
+function removeAddress() {
+	const mapApproach = people.map( (a) => {
+		delete a.address;
+		return a;
+	});
+	console.table(mapApproach)
 
-console.log(address);
-// expected output: Array [2, 8, 18, 32]
+}
 
-// callback array
-var new_people = people.address(function callback(currentValue[, address[, people]])
-{
-	// Return element for new_array
-}[, thisArg]);
+removeAddress();
+console.table(people)
