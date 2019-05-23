@@ -243,3 +243,10 @@ function removeCompany() {
 removeCompany();
 console.table(people)
 
+// let updatedArray = array.map(
+// 	(object) => {
+// 		delete object.company
+// 		return object;
+// 	}
+// );
+
