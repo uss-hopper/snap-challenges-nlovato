@@ -1,3 +1,14 @@
 if(1<100&&1=50){
 output "Count Number"
 }
+
+while(i<20){
+if(i 2 === 0)
+output "fizz";
+}
+if(i  5 === 0){
+output "buzz";
+}
+if(i 2 !>= 0 && i 5 !== 0){
+output "baz";
+}
