@@ -1,0 +1,8 @@
+function returnVowel (vowelArray) {
+returnArray = [];
+foreach (vowelArray as element){
+returnArray[element] = returnArray[element] = remove "y";
+}
+return returnArray
+}
+
